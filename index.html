@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create-akk-form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form class="login-form">
+    <h1>Create an account</h1>
+    <div class="text">
+      <input class="email-input" type="email" required>
+      <div class="placeholder">Email</div>
+    </div>
+    <div class="text">
+      <input class="password-input" type="password" required>
+      <div class="placeholder ">Password</div>
+      <div class="show-password fas fa-eye-slash"></div>
+    </div>
+    <button class="button" disabled>Submit</button>
+  </form>
+
+  <div id='popup' class="popup">
+    <div class="popup-body">
+      <div class="popup-content">
+        <h1 class="email-user"></h1>
+        <div class="popup-buttons">
+          <button class="popup-cancel">Cancel</button>
+          <button class="popup-confirm">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='final-create' class="final-create">
+    <div class="final-content">
+      <h1 class="final-email"></h1>
+      <img src="./img/final-pic.jpg" width='60%' alt="men-on-the-top-of-mountain">
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

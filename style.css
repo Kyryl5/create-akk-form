@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: url(./img/background.jpg) no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  width: 350px;
+  height: 440px;
+  border-radius: 5px;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.5), 0 14px 16px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  padding: 50px 40px;
+}
+
+.login-form h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  cursor: none;
+}
+
+.text {
+  position: relative;
+}
+
+.text input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.text .error {
+  outline: 1px solid red;
+  border-radius: 5px;
+}
+
+.placeholder {
+  margin-bottom: 10px;
+}
+
+.show-password {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: grey;
+}
+
+.button {
+  display: block;
+  width: 120px;
+  height: 45px;
+  margin: 40px auto;
+  background-color: rgb(126, 221, 63);
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover:not(:disabled),
+.popup-confirm:hover {
+  background-color: rgb(104, 255, 10);
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: transparent;
+  color: grey;
+  border: 2px solid;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup-content {
+  background-color: white;
+  color: black;
+  width: 800px;
+  height: 300px;
+  border-radius: 5px;
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.popup-cancel,
+.popup-confirm {
+  width: 120px;
+  height: 45px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+
+}
+
+.popup-confirm {
+  right: 180px;
+  background-color: rgb(126, 221, 63);
+  color: black;
+}
+
+.popup-cancel {
+  left: 180px;
+  background-color: rgb(200, 199, 199);
+  color: black;
+}
+
+.popup-cancel:hover {
+  background-color: grey;
+}
+
+.final-create {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(./img/background.jpg) no-repeat center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.final-create:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.final-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.final-email {
+  margin-bottom: 20px;
+  color: #fff;
+}
